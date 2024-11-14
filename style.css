@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,62 +8,121 @@
 }
 
 header{
-    background-color: darkslategray;
-    color:gold
+    background-color: #3c4146;
+    color:#ffffff;
+    padding: 10px;
+    display: flex;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px; 
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+}
+
+header nav li a{
+    color:whitesmoke;
+    text-decoration: none;
 }
 
 body{
-    background-color: whitesmoke;
+    background-color:#FFFFFF;
 }
 
-.container{
-    width: 1366px;
-    margin: 0 auto;
+.img img{
+    width: 700px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .copy{
     width: 1366px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
+    color: gray
+}
+
+#volta{
+    display: flex;
+    justify-content: flex-end; /* Alinha o conteúdo à direita */
+}
+
+#volta a {
+    font-size: 18px;
+    padding-right: 150px; /* Adiciona um espaço de 100px dentro do link, à direita */
+    color:blue;
 }
 
 * .container h2{
-    color:aliceblue;
-    margin-top: 4px;
+    color:#333333;
+    margin-top: 6px;
     margin-bottom: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 26px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
 }
 
 * .container h3, h4{
-    color:gray;
+    color:#333333;
     margin-top: 4px;
     margin-bottom: 6px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-main li{
-    color:whitesmoke;
-    margin-bottom: 16px;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
 }
 
 * .container p{
-    color:cornsilk;
+    width: 100%;            /* O artigo ocupa toda a largura disponível */
+    max-width: 800px;       /* Largura máxima de 800px */
+    padding: 20px;          /* Espaçamento interno de 20px em todas as direções */
+    margin-left: auto;      /* Centraliza o artigo horizontalmente */
+    margin-right: auto;     /* Centraliza o artigo horizontalmente */
+    box-sizing: border-box;
+    color:#333333;
+    margin-bottom: 10px;
+    font-family: "Noticia Text", serif; 
+    font-size: 20px;
+    text-align: justify;
+}
+
+ul{
+    width: 100%;            /* O artigo ocupa toda a largura disponível */
+    max-width: 800px;       /* Largura máxima de 800px */
+    padding: 20px;
+    margin-left:auto;      /* Centraliza o artigo horizontalmente */
+    margin-right: auto;     /* Centraliza o artigo horizontalmente */
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    list-style-type: none;
+    font-size: 20px;
+    color:#333333;
     margin-bottom: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-section#esportes{
-    background-color: rgba(0,255,0,0.3);
+h2#corsport{
+    background-color: rgba(46, 204, 113, 0.5);
+    text-align: center;
 }
 
-section#economia{
-    background-color: rgba(154, 154, 2, 0.35);
+h2#coreconomy{
+    background-color: rgba(243, 156, 18, 0.5);
+    text-align: center;
 }
 
-section#entretenimento{
-    background-color: rgba(0,0,0,0.2);
+h2#corentre{
+    background-color: rgba(155, 89, 182, 0.5);
+    text-align: center;
 }
 
-section#tecnologia{
-    background-color: rgba(0,0,255,0.3);
+h2#cortecnology{
+    background-color: rgba(52, 152, 219, 0.5);
+    text-align: center;
 }
+
+
